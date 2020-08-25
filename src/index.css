@@ -19,8 +19,8 @@ code {
 
 .t-card-image {
   border-radius: 10px;
-  width: 300px; 
-  height: 480px;
+  width: 250px; 
+  height: 250px;
   box-shadow: 0px 0px 3px 1px #ccc;
 }
 
@@ -35,6 +35,32 @@ code {
 }
 
 .t-card-sub-title {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.t-hcard{
+  margin: 20px;
+}
+
+.t-hcard-image {
+  border-radius: 10px;
+  width: 250px; 
+  height: 300px;
+  box-shadow: 0px 0px 3px 1px #ccc;
+}
+
+.t-hcard-info {
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.t-hcard-title {
+  font-size: 24px;
+  margin: 0px;
+}
+
+.t-hcard-sub-title {
   font-size: 16px;
   margin: 0px;
 }
