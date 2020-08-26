@@ -17,10 +17,10 @@ constructor(props) {
     this.state= {
       title: 'Tyler Roth',
       headerLinks: [
-        {title: 'Home', path: '/'},
-        {title: 'Portfolio', path: '/portfolio'},
-        {title: 'About', path: '/about'},
-        {title: 'Contact', path: '/contact'}
+        {title: 'Home', path: '/React-Portfolio/'},
+        {title: 'Portfolio', path: '/React-Portfolio/portfolio'},
+        {title: 'About', path: '/React-Portfolio/about'},
+        {title: 'Contact', path: '/React-Portfolio/contact'}
       ],
       home: {
         title: 'Dream Bigger', 
@@ -51,19 +51,19 @@ constructor(props) {
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle"/>
             <Navbar.Collapse id="navbar-toggle">
               <Nav className="ml-auto">
-                <Link className="nav-link" to ="/">Home </Link>
-                <Link className="nav-link" to ="/portfolio">Portfolio </Link>
-                <Link className="nav-link" to ="/about">About</Link>
-                <Link className="nav-link" to ="/contact">Contact</Link>
+                <Link className="nav-link" to ="/React-Portfolio/">Home </Link>
+                <Link className="nav-link" to ="/React-Portfolio/portfolio">Portfolio </Link>
+                <Link className="nav-link" to ="/React-Portfolio/about">About</Link>
+                <Link className="nav-link" to ="/React-Portfolio/contact">Contact</Link>
 
               </Nav>
             </Navbar.Collapse>
           </Navbar>
 
-          <Route path="/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
-          <Route path="/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
-          <Route path="/about" exact render={()=> <AboutPage title={this.state.about.title}/>} />
-          <Route path="/contact" exact render={()=> <ContactPage title={this.state.contact.title}/>} />
+          <Route path="/React-Portfolio/" exact render={()=> <HomePage title={this.state.home.title} subTitle={this.state.home.subTitle} text={this.state.home.text} />} />
+          <Route path="/React-Portfolio/portfolio" exact render={()=> <PortfolioPage title={this.state.portfolio.title} />} />
+          <Route path="/React-Portfolio/about" exact render={()=> <AboutPage title={this.state.about.title}/>} />
+          <Route path="/React-Portfolio/contact" exact render={()=> <ContactPage title={this.state.contact.title}/>} />
 
           <Footer/>
         </Container>
